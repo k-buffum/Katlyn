@@ -1,72 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Katlyn</title>
+<head>	
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+  <title>Katlyn Buffum</title>
+  <style>
+  	body {
+  	  text-align: center;
+  	  background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url("http://imgur.com/1v2JObj.png");
+      background-size: cover;
+  	  color: white;
+  	  font-size:20px;
+  	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  	}
+	  p {
+  	  margin: 0px 40px 0px 40px;
+  	}
+   	img {
+  	  margin: 40px 40px 0px 100px;
+  	  border: 7px solid black;
+  	  border-radius: 20px;
+  	}
+  	article {
+  		padding: 20px;
+  	}
+  	@media (max-width: 1000px) {
+  	  h1 {
+  	    font-size: 20px;
+  	  }
+  	  img{
+  	  	max-width: 300px;
+  	  	max-height: 420px;
+   	  }
+  	  article {
+  	  	font-size: 18px;
+  	  }
+   	}
+  	footer {
+  	  padding: 10px 0px 10px 0px;
+  	}
+  	a {
+  		color: white;
+  	}
+  	ul {
+  	  padding: 10px;
+  	}
+  	li {
+  	  display: inline;
+  	  padding: 0px 10px 0px 10px;
+  	}
+  </style>
 </head>
+
 <body>
+  <h1>Welcome to my website!</h1>
+  <div>
+    <div style="width: 100%">
+      <img id="image" src="http://imgur.com/gpZ7xTa.png" Align="left" alt="A picture from the tallest building in Seattle." style="float:left; WIDTH="300" HEIGHT="420"">
+    </div>
+    <article>
+      <h2>About me</h2>  
+      <p>Hello everyone!  My name is Katlyn Buffum and this is my website.  I was born in Virginia, raised in Florida, and now reside in Washington.  In my spare time I enjoy eating, hiking, swimming, playing Elder Scrolls, being weird with my boyfriend, hanging out with family, and playing with my dog Jessie.  My favorite things include the color green, giraffes, chocolate, and southern comfort foods.</p>
+  	  <p>I am the oldest of 3.  I previously worked in a hospital for 3 years as a Certified Nursing Assistant, and 6 months as a Health Unit Coordinator and Cardiac Monitor Technician.  Currently, I'm working towards becoming a developer, learning Ruby on Rails, Javascript, HTML, and CSS.  My educational background includes an  Associate in Arts degree, Patient Care Technician Certificate, 1 year at UCF for teaching, nursing school prerequsites, and 4 months of nursing school.  So far, my programming experience consists of taking Intro to Python at GA, learning Ruby on Codecademy, some Java, Javascript, HTML, and CSS.</p>
+    </article>
 
-  <h1 style="font-family:comic sans ms">Welcome to my website!</h1>
+    <button>Funny Stuff</button>
+  </div>
 
-  <!-- <center><img src="Documents/Images/WebPic.jpg" alt="A picture from the tallest building in Seattle." style="WIDTH=32 HEIGHT=32">
--->
+	<footer>
+  	<p>
+    <ul>
+      <li>Contact Information:</li>
+      <li><a href="mailto:knbuffum@gmail.com">knbuffum@gmail.com</a></li>
+      <li>(321) 536-2478</li>
+    </ul>
+    </p>
+  </footer>
 
-  <h2 style="font-family:comic sans ms">About me</h2>
-  <p style="font-family:comic sans ms">Hello everyone!  My name is Katlyn Buffum and this is my website.  I was born in Virginia, raised in Florida, and now reside in Washington.  Some of my hobbies include: eating, hiking, swimming, Elder Scrolls, being weird with my boyfriend, hanging out with family, and playing with my dog Jessie.  I worked in a hospital for 3 years as a certified nursing assistant, and 6 months as a health unit coordinator, and cardiac monitor technician.  I am the oldest of 3, I have a younger sister and brother.  I am currently working towards becoming a developer, learning Ruby and Rails.  My favorite colors are green and yellow, favorite animals are ducks, giraffes, and elephants, and favorite foods include chocolate, barbeque, southern comfort foods, and chicken korma with nan.  My educational background includes an  Associate in Arts degree, Patient Care Technician Certificate, 1 year at UCF for teaching, nursing school prerequsites, and 4 months of nursing school.  My programming experience is limited to a class at General Assembly to learn Python, learning Ruby on Codecademy, very little Java, and dabbling in HTML when I had a Myspace.</p></center>
+  <script>
+    $("button").on("click", function(){
+      if (document.getElementById("image").src == "http://imgur.com/gpZ7xTa.png") {
+        document.getElementById("image").src="http://cdn.list25.com/wp-content/uploads/2012/04/monkey.gif";
+      } else {
+        document.getElementById("image").src="http://imgur.com/gpZ7xTa.png";
+      }
+    })
+  </script>
 
-  <h2 style="font-family:comic sans ms">Projects</h2>
-  <ul style="font-family:comic sans ms">
-  	<li>Website</li>
-  	<li>Duck Feeding Schedule</li>
-  	<li>Period Planner</li>
-  </ul>
-
-  <h2 style="font-family:comic sans ms">Favorite Websites</h2>
-  <ol style="font-family:comic sans ms">
-  	<li><a href="http://animals.nationalgeographic.com/animals/" target="_blank">National Geographic</a></li>
-  	<li><a href="http://www.animalplanet.com/breed-selector/dog-breeds/herding/australian-cattle-dog.html" target="_blank">Animal Planet: Australian Cattle Dogs</a></li>
-  	<li><a href="http://www.ferret.org/" target="_blank">Ferret.org</a></li>
-  </ol>
-
-<!-- 
-
-
-KKKKKKKKK    KKKKKKK                AAA          TTTTTTTTTTTTTTTTTTTTTTT LLLLLLLLLLL          YYYYYYY       YYYYYYY NNNNNNNN        NNNNNNNN  !!! 
-K:::::::K    K:::::K               A:::A         T:::::::::::::::::::::T L:::::::::L          Y:::::Y       Y:::::Y N:::::::N       N::::::N !!:!!
-K:::::::K    K:::::K              A:::::A        T:::::::::::::::::::::T L:::::::::L          Y:::::Y       Y:::::Y N::::::::N      N::::::N !:::!
-K:::::::K   K::::::K             A:::::::A       T:::::TT:::::::TT:::::T LL:::::::LL          Y::::::Y     Y::::::Y N:::::::::N     N::::::N !:::!
-KK::::::K  K:::::KKK            A:::::::::A      TTTTTT  T:::::T  TTTTTT   L:::::L            YYY:::::Y   Y:::::YYY N::::::::::N    N::::::N !:::!
-  K:::::K K:::::K              A:::::A:::::A             T:::::T           L:::::L               Y:::::Y Y:::::Y    N:::::::::::N   N::::::N !:::!
-  K::::::K:::::K              A:::::A A:::::A            T:::::T           L:::::L                Y:::::Y:::::Y     N:::::::N::::N  N::::::N !:::!
-  K:::::::::::K              A:::::A   A:::::A           T:::::T           L:::::L                 Y:::::::::Y      N::::::N N::::N N::::::N !:::!
-  K:::::::::::K             A:::::A     A:::::A          T:::::T           L:::::L                  Y:::::::Y       N::::::N  N::::N:::::::N !:::!
-  K::::::K:::::K           A:::::AAAAAAAAA:::::A         T:::::T           L:::::L                   Y:::::Y        N::::::N   N:::::::::::N !:::!
-  K:::::K K:::::K         A:::::::::::::::::::::A        T:::::T           L:::::L                   Y:::::Y        N::::::N    N::::::::::N !!:!!
-KK::::::K  K:::::KKK     A:::::AAAAAAAAAAAAA:::::A       T:::::T           L:::::L         LLLLLL    Y:::::Y        N::::::N     N:::::::::N  !!! 
-K:::::::K   K::::::K    A:::::A             A:::::A    TT:::::::TT       LL:::::::LLLLLLLLL:::::L    Y:::::Y        N::::::N      N::::::::N      
-K:::::::K    K:::::K   A:::::A               A:::::A   T:::::::::T       L::::::::::::::::::::::L YYYY:::::YYYY     N::::::N       N:::::::N  !!! 
-K:::::::K    K:::::K  A:::::A                 A:::::A  T:::::::::T       L::::::::::::::::::::::L Y:::::::::::Y     N::::::N        N::::::N !!:!!
-KKKKKKKKK    KKKKKKK AAAAAAA                   AAAAAAA TTTTTTTTTTT       LLLLLLLLLLLLLLLLLLLLLLLL YYYYYYYYYYYYY     NNNNNNNN         NNNNNNN  !!! 
-
-===================================================================== 
-==-	   __________  ___  ____    -====================================
-=-	  /_  __/ __ \/ _ \/ __ \    -=================================== 
-=-	   / / / /_/ / // / /_/ /    -===================================
-=-	  /_/  \____/____/\____/    -====================================
-==-                           -======================================
-=====================================================================
-
- 1. Write an about me section
- 2. Make a projects section with a bulleted list of 3 fake projects
- 3. Make a numbered list of links to your 3 favorite websites
-
-
--->
-
-
-<%= yield %>
-
+  <%= yield %>
 </body>
 </html>
