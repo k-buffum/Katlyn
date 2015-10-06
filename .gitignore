@@ -45,5 +45,5 @@ bower.json
 # Ignore pow environment settings
 .powenv
 
-Gemfile.lock
-shared/
+*.log
+*.pid
