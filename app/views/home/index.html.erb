@@ -6,56 +6,56 @@
   <%= csrf_meta_tags %>
 
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-  <title>Katlyn Buffum</title>
+    <title>Katlyn Buffum</title>
   <style>
-  	body {
-  	  text-align: center;
-  	  background-image: 
+    body {
+      text-align: center;
+      background-image: 
       linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ), url("http://imgur.com/1v2JObj.png");
       background-size: cover;
-  	  color: white;
-  	  font-size:20px;
-  	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
-  	}
-	  p {
-  	  margin: 0px 40px 0px 40px;
-  	}
-   	img {
-  	  margin: 40px 40px 0px 100px;
-  	  border: 7px solid black;
-  	  border-radius: 20px;
-  	}
-  	article {
-  		padding: 20px;
-  	}
-  	@media (max-width: 1000px) {
-  	  h1 {
-  	    font-size: 20px;
-  	  }
-  	  img{
-  	  	max-width: 300px;
-  	  	max-height: 420px;
-   	  }
-  	  article {
-  	  	font-size: 18px;
-  	  }
-   	}
-  	footer {
-  	  padding: 10px 0px 10px 0px;
-  	}
-  	a {
-  		color: white;
-  	}
-  	ul {
-  	  padding: 10px;
-  	}
-  	li {
-  	  display: inline;
-  	  padding: 0px 10px 0px 10px;
-  	}
+      color: white;
+      font-size:20px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+    }
+    p {
+      margin: 0px 40px 0px 40px;
+    }
+    img {
+      margin: 40px 40px 0px 100px;
+      border: 7px solid black;
+      border-radius: 20px;
+    }
+    article {
+      padding: 20px;
+    }
+    @media (max-width: 1000px) {
+      h1 {
+        font-size: 20px;
+      }
+      img{
+        max-width: 300px;
+        max-height: 420px;
+      }
+      article {
+        font-size: 18px;
+      }
+    }
+    footer {
+      padding: 10px 0px 10px 0px;
+    }
+    a {
+      color: white;
+    }
+    ul {
+      padding: 10px;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
   </style>
 </head>
 
@@ -67,15 +67,15 @@
     </div>
     <article>
       <h2>About me</h2>  
-      <p>Hello everyone!  My name is Katlyn Buffum and this is my website.  I was born in Virginia, raised in Florida, and now reside in Washington.  In my spare time I enjoy eating, hiking, swimming, playing Elder Scrolls, being weird with my boyfriend, hanging out with family, and playing with my dog Jessie.  My favorite things include the color green, giraffes, chocolate, and southern comfort foods.</p>
-  	  <p>I am the oldest of 3.  I previously worked in a hospital for 3 years as a Certified Nursing Assistant, and 6 months as a Health Unit Coordinator and Cardiac Monitor Technician.  Currently, I'm working towards becoming a developer, learning Ruby on Rails, Javascript, HTML, and CSS.  My educational background includes an  Associate in Arts degree, Patient Care Technician Certificate, 1 year at UCF for teaching, nursing school prerequsites, and 4 months of nursing school.  So far, my programming experience consists of taking Intro to Python at GA, learning Ruby on Codecademy, some Java, Javascript, HTML, and CSS.</p>
+      <p>Hello everyone!  My name is Katlyn Buffum and this is my website.  I was born in Virginia, raised in Florida, and now reside in Washington.  In my spare time I enjoy eating, hiking, swimming, playing Elder Scrolls, hanging out with my boyfriend and family, and playing with my dog Jessie.  My favorite things include the color green, giraffes, chocolate, and southern comfort foods.</p>
+      <p>I am the oldest of 3.  I previously worked in a hospital for 3 years as a Certified Nursing Assistant, and 6 months as a Health Unit Coordinator and Cardiac Monitor Technician.  Currently, I'm working towards becoming a developer, learning Ruby on Rails, Javascript, HTML, and CSS.  My educational background includes an  Associate in Arts degree, Patient Care Technician Certificate, 1 year at UCF for teaching, nursing school prerequsites, and 4 months of nursing school.  So far, my programming experience consists of taking Intro to Python at GA, learning Ruby on Codecademy, some Java, Javascript, HTML, and CSS.</p>
     </article>
 
-    <button>Funny Stuff</button>
+    <button onclick="changeImage()">Funny Stuff</button>
   </div>
 
-	<footer>
-  	<p>
+  <footer>
+    <p>
     <ul>
       <li>Contact Information:</li>
       <li><a href="mailto:knbuffum@gmail.com">knbuffum@gmail.com</a></li>
@@ -83,14 +83,14 @@
     </p>
   </footer>
 
-  <script>
-    $("button").on("click", function(){
+  <script type="text/javascript">
+    function changeImage() {
       if (document.getElementById("image").src == "http://imgur.com/gpZ7xTa.png") {
         document.getElementById("image").src="http://cdn.list25.com/wp-content/uploads/2012/04/monkey.gif";
       } else {
         document.getElementById("image").src="http://imgur.com/gpZ7xTa.png";
       }
-    })
+    }
   </script>
 
   <%= yield %>
