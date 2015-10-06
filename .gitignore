@@ -46,9 +46,4 @@ bower.json
 .powenv
 
 Gemfile.lock
-README.rdoc
-bin/
-config.ru
-db/
-lib/
 shared/
