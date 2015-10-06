@@ -48,3 +48,5 @@ bower.json
 shared
 *.log
 *.pid
+
+public/assets
