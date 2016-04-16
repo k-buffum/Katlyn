@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Katlyn</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katlyn Buffum</title>
+    <link href='https://fonts.googleapis.com/css?family=Calligraffitti|Tangerine' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  </head>
+  <body>
 
-<%= yield %>
+    <%= yield %>
 
-</body>
+    <footer>
+      <a href="https://www.linkedin.com/in/katlynbuffum"><i class="fa fa-linkedin fa-2x"></i></a>
+      <a href="https://github.com/k-buffum"><i class="fa fa-github fa-2x"></i></a>
+      <a href="http://twitter.com/knbuffum"><i class="fa fa-twitter fa-2x"></i></a>
+      <a href="http://facebook.com/katlyn.buffum"><i class="fa fa-facebook fa-2x"></i></a>
+      <p>&copy; 2015 Katlyn Buffum</p>
+    </footer>
+  </body>
 </html>

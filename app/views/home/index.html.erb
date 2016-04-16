@@ -72,6 +72,12 @@
     </article>
 
     <button onclick="changeImage()">Funny Stuff</button>
+
+    <article>
+      <button onclick="rockPaperScissors('Rock')">Rock</button>
+      <button onclick="rockPaperScissors('Paper')">Paper</button>
+      <button onclick="rockPaperScissors('Scissors')">Scissors</button>
+    </article>
   </div>
 
   <footer>
@@ -83,14 +89,60 @@
     </p>
   </footer>
 
+  <!--<img id="image" src="assets/images/giraffe.png" Align="center" alt="poop." style="float:left; WIDTH="20px" HEIGHT="auto"">-->
+
   <script type="text/javascript">
     function changeImage() {
       if (document.getElementById("image").src == "http://imgur.com/gpZ7xTa.png") {
         document.getElementById("image").src="http://cdn.list25.com/wp-content/uploads/2012/04/monkey.gif";
-      } else {
+      } else if (document.getElementById("image").src == "http://cdn.list25.com/wp-content/uploads/2012/04/monkey.gif") {
         document.getElementById("image").src="http://imgur.com/gpZ7xTa.png";
       }
     }
+  </script>
+
+  <script type="text/javascript">
+  function rockPaperScissors(userchoice) {
+    var computerChoice = getComputerChoice();
+    alert("You chose " + userchoice + " ...the computer chose " + computerChoice + ".");
+    compareChoices(userchoice, computerChoice);
+  }
+
+  function getComputerChoice(){
+    var computerChoice = Math.random();
+    if (computerChoice < 0.34){
+      computerChoice = "Rock";
+    } else if (computerChoice < 0.67){
+      computerChoice = "Paper";
+    } else {
+      computerChoice = "Scissors";
+    }
+    return computerChoice; 
+  }
+
+  function compareChoices(userChoice, computerChoice) {
+    if (userChoice === computerChoice) {
+      alert("The result is a tie, let's play again!");
+    } else if (userChoice === "Rock") {
+      if (computerChoice === "Scissors") {
+        alert("Congratulations, you win!");
+      } else {
+        alert("The computer wins! Care to play again?");
+      }
+    } else if (userChoice === "Scissors") {
+      if (computerChoice === "Rock") {
+        alert("The computer wins, let's play again!");
+      } else {
+        alert("Yippie! You win!");
+      }
+    } else if (userChoice === "Paper") {
+      if (computerChoice === "Rock") {
+        alert("The computer wins. Don't give up, try again!");
+      } else {
+        alert("Hail the all mighty visitor. Give it another go!");
+      }
+    }
+  }
   </script>
 
   <%= yield %>

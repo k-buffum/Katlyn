@@ -1,15 +1,235 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/************************************
+GENERAL
+************************************/
+
+a {
+	text-decoration: none;
+}
+
+#about_info, #education_info, #project_info {
+	max-width: 100%;
+	margin: 2% 12%;
+	padding: 5px;
+}
+
+html {
+	width: 100%;
+}
+
+body {
+	/*background-color: rgba(183, 144, 195, 0.1);*/
+	background-image: url('cream_dust.png');
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
+}
+
+h3 {
+	margin: 0 0 1em 0;
+}
+
+
+
+/************************************
+HEADING
+************************************/
+
+header {
+	font-family: 'Calligraffitti', sans-serif;
+	margin: 0 0 30px 0;
+	width: 100%;
+	text-align: center;
+}
+
+#logo {
+	margin: 0;
+}
+
+h1 {
+	padding: 10px 0 12px 0;
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 1em;
+	margin: 0px;
+}
+
+h2 {
+	font-size: 1.15em;
+	margin: -5px 0 0;
+	font-weight: normal;
+}
+
+h3 {
+	margin: 10px;
+}
+
+
+
+/************************************
+NAGIVATION
+************************************/
+
+nav {
+	margin: 20px 0 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 1.1em
+}
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
+}
+
+
+
+/************************************
+FOOTER
+************************************/
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;
+	padding-top: 50px;
+	color: #bfbfbf;
+}
+
+footer a {
+	color: #BFBFBF;
+	padding: 10px;
+	text-decoration: none;
+}
+
+
+
+/************************************
+PAGE: ABOUT
+************************************/
+
+#about {
+	float: right;
+	width: 50%;
+}
+
+#headShot {
+	border-radius: 50%;
+	max-height: 275px;
+}
+
+#selfImage {
+	float: left;
+	width: 40%;
+}
+
+
+
+/************************************
+PAGE: CONTACT
+************************************/
+
+#contact_info {
+	margin: 2% 20%;
+}
+
+.contact-info {
+	font-size: 0.9em;
+	list-style: none;
+	margin: 0;
+	max-width: 195px;
+	padding: 0;
+}
+
+.contact-info a {
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding:0 0 0 30px;
+	margin: 0 0 10px;
+}
+
+#primary, #secondary a{
+	color: #000;
+}
+
+#primary {
+	width: 50%;
+	float: left;
+}
+
+#secondary {
+	width: 25%;
+	float: right;
+}
+
+
+
+/************************************
+PAGE: PROJECTS
+************************************/
+
+.projects {
+	display: -webkit-box;
+	margin: 0 auto 10px;
+}
+
+.project_content a {
+	color: black;
+}
+
+.project_content {
+	max-width: 50%;
+	margin: 2%;
+}
+
+.project_pic {
+	max-width: 50%;
+	margin: 2%;
+}
+
+.project_picture {
+	max-width: 100%;
+}
+
+.project_title {
+	color: black;
+	text-shadow: none;
+}
+
+.pt_right {
+	text-align: right
+}
+
+/************************************
+COLORS
+************************************/
+
+header {
+	background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.2 ),
+      rgba(0, 0, 0, 0.2)
+    ), url("flowers.jpg");
+
+	background-size: cover;
+	height: 150px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, nav a, nav a:visited {
+	color: #fff;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav a.selected, nav a:hover {
+	color: #6AB528;
+}

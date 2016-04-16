@@ -1,0 +1,160 @@
+<header>
+  <a href="about.html.erb" id="logo">
+    <h1>Katlyn Buffum</h1>
+    <h2>Junior Developer</h2>
+  </a>
+  <nav>
+    <ul>
+      <li><a href="about">About</a></li>
+      <li><a href="education">Education</a></li>
+      <li><a href="contact">Contact</a></li>
+      <li><a href="projects" class="selected">Projects</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div id="project_info">
+  <div class='projects'>
+    <div class="project_pic">
+      <%= image_tag("hangman.png", class:"project_picture") %>
+    </div>
+    <div class="project_content">
+      <h1 class="project_title pt_left">Hangman</h1>
+      <p>Hangman with a spin, I created this hangman based on medical facts so that users can test their knowledge.
+        In case you are new to hangman or have simply forgotten how to play, instructions are provided on the home page.
+        You can play with one or two players and see a score based on how many tiles are flipped on your guessed letter.
+        Hints are available if you are having trouble, just click the drop down arrow.</p>
+        <p>
+          <a href="https://www.google.com/fonts"><i class="fa fa-google">Google Fonts</i></a>
+          <a href="https://pixabay.com/en/cactus-country-cowboy-desert-stars-152104/"><i class="fa fa-picture-o">Pixabay</i></a>
+          <a href="http://www.sciencekids.co.nz/sciencefacts/humanbody.html"><i class="fa fa-cogs">Science Kids</i></a>
+          <a href="http://t4t5.github.io/sweetalert/"><i class="fa fa-commenting-o">Sweet Alert</i></a>
+          <br>
+          <i class="devicon-jquery-plain"><a href="http://jquery.com/">jQuery</a>, <a href="https://jqueryui.com/">jQuery UI</a>, & <a href="https://nnattawat.github.io/flip/">jQuery Flip</a></i>
+        </p>
+        <p>
+          <a href="https://github.com/k-buffum/Project1WDI"><i class="fa fa-github">GitHub Page</i></a>
+          <a href="http://k-buffum.github.io/Project1WDI"><i class="fa fa-link">Webpage</i></a>
+        </p>
+    </div>
+  </div>
+  
+  <div class='projects'>
+    <div class="project_content">
+      <h1 class="project_title pt_right">Dog MeetUp</h1>
+      <p class="pt_right">Dog MeetUp was inspired by the frustrations I faced when taking my dog to a dog park and finding no other dogs to socialize my dog with.
+        As a user you can determine the number and size of dogs you are bringing to the dog park.
+        After choosing a time and location you plan to take your dog, you can view a chart displaying the number of dogs scheduled to be at your selected dog park through out the day.</p>
+        <p class="pt_right">
+          <a href="https://www.npmjs.com/package/bcryptjs"><i class="fa fa-user-secret">Bcrypt</i></a>
+          <a href="http://getbootstrap.com/"><i class="devicon-bootstrap-plain">Bootstrap</i></a>
+          <a href="http://www.chartjs.org/"><i class="fa fa-bar-chart">Chart.js</i></a>
+          <a href="http://downloadicons.net/dog-icons?page=2"><i class="fa fa-paw">Dog Icon</i></a>
+          <a href="https://developers.google.com/maps/documentation/javascript/examples/map-geolocation"><i class="fa fa-map-marker">Geolocation</i></a>
+          <a href="https://dashboard.heroku.com/"><i class="devicon-heroku-original">Heroku</i></a>
+          <a href="http://experiments.wemakesites.net/css3-rating-stars-with-selection.html"><i class="fa fa-star">HTML5, CSS3, & JS Experiments</i></a>
+          <a href="http://jquery.com/"><i class="devicon-jquery-plain">jQuery</i></a>
+          <i class="devicon-nodejs-plain"><a href="https://nodejs.org/en/">Node.js</a> & <a href="http://expressjs.com/">Express.js</a></i>
+          <i class="fa fa-google"><a href="https://developers.google.com/maps/">Google Maps API</a> & <a href="https://developers.google.com/places/">Google Places API</a></i>
+        </p>
+        <p class="pt_right">
+          <a href="https://github.com/k-buffum/Dog_MeetUp"><i class="fa fa-github">GitHub Page</i></a>
+          <a href="https://dog-meetup.herokuapp.com/"><i class="fa fa-link">Webpage</i></a>
+        </p>
+    </div>
+    <div class="project_pic">
+      <%= image_tag("dogMeetUp.png", class:"project_picture") %>
+    </div>
+  </div>
+
+  <div class='projects'>
+    <div class="project_pic">
+      <%= image_tag("rainyDay.png", class:"project_picture") %>
+    </div>
+    <div class="project_content">
+      <h1 class="project_title pt_left">Rainy Day</h1>
+      <p>Rainy day is an app used to store details about places you would like to go in your free time.
+        As a user you can search for places, set a goal you would like to accomplish there, and when you are finished you can complete the activity making it an accomplishment.
+        This was a group project, as Product Manager I was in charge of the making sure everything was completed in a timely manner.
+        I contributed to home page, goals page, and restricting access to users.</p>
+        <p>
+          <a href="http://getbootstrap.com/"><i class="devicon-bootstrap-plain">Bootstrap</i></a>
+          <a href="https://fortawesome.github.io/Font-Awesome/"><i class="fa fa-flag">Font Awesome</i></a>
+          <a href="https://dashboard.heroku.com/"><i class="devicon-heroku-original">Heroku</i></a>
+          <i class="fa fa-diamond"><a href="https://www.ruby-lang.org/en/">Ruby</a> on <a href="http://rubyonrails.org/">Rails</a></i>
+          <i class="fa fa-google"><a href="https://developers.google.com/maps/">Google Places API</a> & <a href="https://www.google.com/fonts">Google Fonts</a></i>
+        </p>
+        <p>
+        <a href="https://github.com/k-buffum/rainyday"><i class="fa fa-github">GitHub Page</i></a>
+        <a href="http://rainydayapp.herokuapp.com/"><i class="fa fa-link">Webpage</i></a>
+        </p>
+    </div>
+  </div>
+
+  <!-- <div id="rockPaperScissorsGame">
+    <button onclick="rockPaperScissors"('Rock')><img src="/assets/rock.jpg" class="rock" height="10%" width="10%">Rock</button>
+    <button onclick="rockPaperScissors"('Paper')>Paper</button>
+    <button onclick="rockPaperScissors"('Scissors')>Scissors</button>
+
+    <section id="rock-paper-scissors">
+      <script type="text/javascript">
+        function rockPaperScissors(userChoice) {
+          var userChoice = userChoice.toLowerCase();
+          var computerChoice = getComputerChoice.toLowerCase();
+          
+          function getComputerChoice () {
+            var computerChoice = Math.random();
+            if (computerChoice < 0.34) {
+              computerChoice = "rock";
+            } else if (computerChoice < 0.67) {
+              computerChoice = "paper";
+            } else {
+              computerChoice = "scissors";
+            }
+            return computerChoice;
+          }
+          function getWinner (userChoice, computerChoice) {
+            winner = ;
+            if (userChoice === computerChoice) {
+              winner = "tie";
+            } else if (userChoice === "rock") {
+              if (computerChoice === "paper") {
+                winner = "computer";
+              } else {
+                winner = "user";
+              }
+            } else if (userChoice === "paper") {
+              if (computerChoice === "scissors") {
+                winner = "computer";
+              } else {
+                winner = "user";
+              }
+            } else if (userChoice === "scissors") {
+              if (computerChoice === "rock"){
+                winner = "computer";
+              } else {
+                winner = "user";
+              }
+            } else {
+              return "Please choose Rock, Paper, or Scissors";
+            }
+            return winner;
+          }
+          function playToThree {
+            userScore = 0;
+            computerScore = 0;
+            while (userScore != 3 || computerScore != 3) {
+              if (winner === "user") {
+                userScore += 1;
+              } else if (winner === "computer") {
+                computerScore += 1;
+              } else {
+
+              }
+            }
+          }
+        }
+      </script>
+    </section>
+  </div> -->
+</div>
