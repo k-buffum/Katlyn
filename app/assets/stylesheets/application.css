@@ -118,14 +118,19 @@ PAGE: ABOUT
 	width: 50%;
 }
 
+#about_info {
+	padding-top: 3%;
+}
+
 #headShot {
+	border: 5px solid black;
 	border-radius: 50%;
 	max-height: 275px;
 }
 
 #selfImage {
 	float: left;
-	width: 40%;
+	padding-left: 10%;
 }
 
 
@@ -167,6 +172,72 @@ PAGE: CONTACT
 #secondary {
 	width: 25%;
 	float: right;
+}
+
+
+
+/************************************
+PAGE: EDUCATION
+************************************/
+
+.experienced {
+	background-color: #56C09D;
+}
+
+.experienced, .familiar, .learning, .proficient {
+	border-right: 2px solid black;
+	border-top-right-radius: 10%;
+	border-bottom-right-radius: 10%;
+}
+
+.experienced, .familiar, .learning, .proficient, .skills {
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+	padding: 2px 5px;
+}
+
+.familiar {
+	background-color: #FFC672;
+}
+
+.futureEndevours, .skills {
+	background-color: #5997BB;
+}
+
+#languages div {
+	display: inline-block;
+}
+
+.learning {
+	background-color: #FFA172;
+}
+
+.newline {
+	opacity: 0;
+}
+
+.proficient {
+	background-color: #676EC5;
+}
+
+.skillContainer {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.skills {
+	border-left: 2px solid black;
+	border-top-left-radius: 10%;
+	border-bottom-left-radius: 10%;
+}
+
+.skillSet {
+	list-style: none;
+	padding: 0;
+}
+
+.skillSet li {
+	margin-bottom: 15px;
 }
 
 
