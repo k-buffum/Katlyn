@@ -34,14 +34,23 @@ HEADING
 ************************************/
 
 header {
+	background-image: url("flowers.jpg");
+	background-size: cover;
 	font-family: 'Calligraffitti', sans-serif;
+	height: 150px;
 	margin: 0 0 30px 0;
-	width: 100%;
+	padding: 0;
 	text-align: center;
+	width: 100%;
 }
 
 #logo {
 	margin: 0;
+}
+
+h1, h2, nav a, nav a:visited {
+	color: #fff;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h1 {
@@ -60,6 +69,10 @@ h2 {
 
 h3 {
 	margin: 10px;
+}
+
+nav a.selected, nav a:hover {
+	color: #6AB528;
 }
 
 
@@ -133,21 +146,20 @@ PAGE: ABOUT
 	padding-left: 10%;
 }
 
-
-
-/************************************
-PAGE: CONTACT
-************************************/
+.contact {
+	margin: 0;
+	margin-bottom: 10px;
+}
 
 #contact_info {
 	margin: 2% 20%;
 }
 
 .contact-info {
+	display: -webkit-inline-box;
 	font-size: 0.9em;
 	list-style: none;
 	margin: 0;
-	max-width: 195px;
 	padding: 0;
 }
 
@@ -160,18 +172,26 @@ PAGE: CONTACT
 	margin: 0 0 10px;
 }
 
-#primary, #secondary a{
-	color: #000;
+.contact-info li {
+	margin-right: 60px;
 }
 
-#primary {
-	width: 50%;
-	float: left;
+#primary, #secondary {
+	margin-top: 50px;
+}
+
+#primary, #secondary a{
+	color: #000;
 }
 
 #secondary {
 	width: 25%;
 	float: right;
+	padding-right: 50px;
+}
+
+#secondary a {
+	padding-left: 0;
 }
 
 
@@ -276,31 +296,4 @@ PAGE: PROJECTS
 
 .pt_right {
 	text-align: right
-}
-
-/************************************
-COLORS
-************************************/
-
-header {
-	background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.2 ),
-      rgba(0, 0, 0, 0.2)
-    ), url("flowers.jpg");
-
-	background-size: cover;
-	height: 150px;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-h1, h2, nav a, nav a:visited {
-	color: #fff;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-nav a.selected, nav a:hover {
-	color: #6AB528;
 }
