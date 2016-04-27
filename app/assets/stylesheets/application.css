@@ -292,10 +292,6 @@ PAGE: PROJECTS
 	margin: 2%;
 }
 
-.project_pic:hover {
-	border: 3px solid rgba(218, 143, 232, 0.5);
-}
-
 .project_picture {
 	max-width: 100%;
 }
@@ -308,3 +304,11 @@ PAGE: PROJECTS
 .pt_right {
 	text-align: right
 }
+
+/*.technologies i {
+	margin-left: 5px;
+}
+
+.technologiesRight i {
+	margin-right: 5px;
+}*/

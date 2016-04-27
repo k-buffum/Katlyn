@@ -19,16 +19,16 @@
       <p class="pt_right"> 
         AngioBloom is an app for people who love taking pictures of and discovering information about flowers. It allows users to upload and identify flowers.
       </p>
-      <p class="pt_right">
+      <p class="pt_right technologies">
         <a href="https://www.npmjs.com/package/bcryptjs"><i class="fa fa-user-secret">Bcrypt</i></a>
         <a href="http://getbootstrap.com/"><i class="devicon-bootstrap-plain">Bootstrap</i></a>
         <a href="http://cloudinary.com/"><i class="fa fa-cloud" aria-hidden="true">Cloudinary</i></a>
         <a href="https://dashboard.heroku.com/"><i class="devicon-heroku-original">Heroku</i></a>
         <a href="http://jquery.com/"><i class="devicon-jquery-plain">jQuery</i></a>
-        <i class="devicon-nodejs-plain"><a href="https://nodejs.org/en/">Node.js</a> & <a href="http://expressjs.com/">Express.js</a></i>
         <a href="http://www.sabinanore.com/design/html-special-symbols/">&#10048;Sabina Nore</a>
+        <i class="devicon-nodejs-plain"><a href="https://nodejs.org/en/">Node.js</a> & <a href="http://expressjs.com/">Express.js</a></i>
       </p>
-      <p class="pt_right">
+      <p class="pt_right technologies">
         <a href="https://github.com/k-buffum/AngioBloom"><i class="fa fa-github">GitHub Page</i></a>
         <a href="https://angiobloom.herokuapp.com/ "><i class="fa fa-link">Webpage</i></a>
       </p>
@@ -47,14 +47,14 @@
       <p>
         Rainy Day is an app for people who would like to save an activity for a rainy day. It allows users to search for a place they would like to go and save an activity they would like to complete at their selected place. Once a user has completed the activity they can view all of their completed goals on the achievement page.
       </p>
-      <p>
+      <p class="technologiesRight">
         <a href="http://getbootstrap.com/"><i class="devicon-bootstrap-plain">Bootstrap</i></a>
         <a href="https://fortawesome.github.io/Font-Awesome/"><i class="fa fa-flag">Font Awesome</i></a>
         <a href="https://dashboard.heroku.com/"><i class="devicon-heroku-original">Heroku</i></a>
         <i class="fa fa-diamond"><a href="https://www.ruby-lang.org/en/">Ruby</a> on <a href="http://rubyonrails.org/">Rails</a></i>
         <i class="fa fa-google"><a href="https://developers.google.com/maps/">Google Places API</a> & <a href="https://www.google.com/fonts">Google Fonts</a></i>
       </p>
-      <p>
+      <p class="technologiesRight">
       <a href="https://github.com/k-buffum/rainyday"><i class="fa fa-github">GitHub Page</i></a>
       <a href="http://rainydayapp.herokuapp.com/"><i class="fa fa-link">Webpage</i></a>
       </p>
@@ -79,12 +79,12 @@
         <i class="devicon-nodejs-plain"><a href="https://nodejs.org/en/">Node.js</a> & <a href="http://expressjs.com/">Express.js</a></i>
         <i class="fa fa-google"><a href="https://developers.google.com/maps/">Google Maps API</a> & <a href="https://developers.google.com/places/">Google Places API</a></i>
       </p>
-      <p class="pt_right">
+      <p class="pt_right technologies">
         <a href="https://github.com/k-buffum/Dog_MeetUp"><i class="fa fa-github">GitHub Page</i></a>
         <a href="https://dog-meetup.herokuapp.com/"><i class="fa fa-link">Webpage</i></a>
       </p>
     </div>
-    <div class="project_pic">
+    <div class="project_pic technologies">
       <%= image_tag("dogMeetUp.png", class:"project_picture") %>
     </div>
   </div>
@@ -98,7 +98,7 @@
       <p>
         Hangman is an app for people who would like to test their medical knowledge. It allows users to guess a medical term with a hint available if needed and unlike many other hangman games one and two player options are available.
       </p>
-      <p>
+      <p class="technologiesRight">
         <a href="https://www.google.com/fonts"><i class="fa fa-google">Google Fonts</i></a>
         <a href="https://pixabay.com/en/cactus-country-cowboy-desert-stars-152104/"><i class="fa fa-picture-o">Pixabay</i></a>
         <a href="http://www.sciencekids.co.nz/sciencefacts/humanbody.html"><i class="fa fa-cogs">Science Kids</i></a>
@@ -106,77 +106,10 @@
         <br>
         <i class="devicon-jquery-plain"><a href="http://jquery.com/">jQuery</a>, <a href="https://jqueryui.com/">jQuery UI</a>, & <a href="https://nnattawat.github.io/flip/">jQuery Flip</a></i>
       </p>
-      <p>
+      <p class="technologiesRight">
         <a href="https://github.com/k-buffum/Project1WDI"><i class="fa fa-github">GitHub Page</i></a>
         <a href="http://k-buffum.github.io/Project1WDI"><i class="fa fa-link">Webpage</i></a>
       </p>
     </div>
   </div>
-
-  <!-- <div id="rockPaperScissorsGame">
-    <button onclick="rockPaperScissors"('Rock')><img src="/assets/rock.jpg" class="rock" height="10%" width="10%">Rock</button>
-    <button onclick="rockPaperScissors"('Paper')>Paper</button>
-    <button onclick="rockPaperScissors"('Scissors')>Scissors</button>
-
-    <section id="rock-paper-scissors">
-      <script type="text/javascript">
-        function rockPaperScissors(userChoice) {
-          var userChoice = userChoice.toLowerCase();
-          var computerChoice = getComputerChoice.toLowerCase();
-          
-          function getComputerChoice () {
-            var computerChoice = Math.random();
-            if (computerChoice < 0.34) {
-              computerChoice = "rock";
-            } else if (computerChoice < 0.67) {
-              computerChoice = "paper";
-            } else {
-              computerChoice = "scissors";
-            }
-            return computerChoice;
-          }
-          function getWinner (userChoice, computerChoice) {
-            winner = ;
-            if (userChoice === computerChoice) {
-              winner = "tie";
-            } else if (userChoice === "rock") {
-              if (computerChoice === "paper") {
-                winner = "computer";
-              } else {
-                winner = "user";
-              }
-            } else if (userChoice === "paper") {
-              if (computerChoice === "scissors") {
-                winner = "computer";
-              } else {
-                winner = "user";
-              }
-            } else if (userChoice === "scissors") {
-              if (computerChoice === "rock"){
-                winner = "computer";
-              } else {
-                winner = "user";
-              }
-            } else {
-              return "Please choose Rock, Paper, or Scissors";
-            }
-            return winner;
-          }
-          function playToThree {
-            userScore = 0;
-            computerScore = 0;
-            while (userScore != 3 || computerScore != 3) {
-              if (winner === "user") {
-                userScore += 1;
-              } else if (winner === "computer") {
-                computerScore += 1;
-              } else {
-
-              }
-            }
-          }
-        }
-      </script>
-    </section>
-  </div> -->
 </div>
