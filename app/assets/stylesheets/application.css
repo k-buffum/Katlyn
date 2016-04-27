@@ -120,6 +120,9 @@ footer a {
 	text-decoration: none;
 }
 
+footer a:hover {
+	color: #5E91F5;
+}
 
 
 /************************************
@@ -266,6 +269,10 @@ PAGE: EDUCATION
 PAGE: PROJECTS
 ************************************/
 
+.fa-github:hover, .fa-link:hover {
+	color: #DA8FE8;
+}
+
 .projects {
 	display: -webkit-box;
 	margin: 0 auto 10px;
@@ -283,6 +290,10 @@ PAGE: PROJECTS
 .project_pic {
 	max-width: 50%;
 	margin: 2%;
+}
+
+.project_pic:hover {
+	border: 3px solid rgba(218, 143, 232, 0.5);
 }
 
 .project_picture {
